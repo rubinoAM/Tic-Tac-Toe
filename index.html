@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tic-Tac-Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:500,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <div id="overlay"></div>
+    <div id="option-container">
+        <h1>How many players will be playing?</h1>
+        <button class="1p-btn" onclick="clearOverlay(event); onePlayerGame(event)">1 Player</button>
+        <button class="2p-btn" onclick="clearOverlay(event); twoPlayerGame(event)">2 Player</button>
+    </div>
+    <div id="message">It's Player One's Turn!</div> <!--Holds messages for the players-->
+    <div id="board">
+        <div class="board-row">
+            <button id="A1" class="square">-</button>
+            <button id="B1" class="square">-</button>
+            <button id="C1" class="square">-</button>
+        </div>
+        <div class="board-row">
+            <button id="A2" class="square">-</button>
+            <button id="B2" class="square">-</button>
+            <button id="C2" class="square">-</button>
+        </div>
+        <div class="board-row">
+            <button id="A3" class="square">-</button>
+            <button id="B3" class="square">-</button>
+            <button id="C3" class="square">-</button>
+        </div>
+    </div><!--
+    <div id="score-board">
+        <div id="p1-score" class="score">Player 1 Score: 0</div>
+        <div id="p2-score" class="score">Player 2 Score: 0</div>
+    </div>-->
+    <button class="reset-btn" onclick="resetGame()">RESET</button>
+    <script src="script.js"></script>
+</body>
+</html>
